@@ -1,0 +1,12 @@
+co 3 cach config web
+cach 1: su dung we.xml
+cach 2:　su dung java bean 
+cach 3:
+
+
+ModelAndView dung de truyen thong tin giuwa controller va view (mapping)
+luu y cac thuoc tinh neu turyen object di can dung vs model
+
+
+Cach 2 de truyen thong tin la truyen String (ap dung cho spring v3 tro di
+
