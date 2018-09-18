@@ -34,9 +34,6 @@ public class UserController {
 	// update user if !id
 	@RequestMapping(value="addUser")
 	public  String login(@ModelAttribute("User") User user,Model model) {
-//		List<User> listUser = dao.getAllUser();
-//		model.addAttribute("listUser", listUser);
-		
 		if(user.getId() != 0) {
 			userDao.updateUser(user);
 		} else {

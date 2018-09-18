@@ -17,20 +17,16 @@ public class LoginController {
 	@Autowired
 	private LoginService loginService;
 	
-	@RequestMapping(value="login")
-	public  String showLogin(Model model) {
-		model.addAttribute("User",new User());
-		return "login";
-	}
 	
-	@RequestMapping(value="listUser")
-	public  String login(@ModelAttribute("User") User user,Model model) {
-		
-		if(loginService.login(user)) {
-			model.addAttribute("User",user);
-			return "listUser";
-		}
-		model.addAttribute("error",true);
-		return "redirect:login";
-	}
+	
+//	@RequestMapping(value="listUser")
+//	public  String login(@ModelAttribute("User") User user,Model model) {
+//		
+//		if(loginService.login(user)) {
+//			model.addAttribute("User",user);
+//			return "listUser";
+//		}
+//		model.addAttribute("error",true);
+//		return "redirect:login";
+//	}
 }
