@@ -11,8 +11,11 @@
 <body>
 	<div align = "center">
 		<form action="calcuteTrial" method="get">
-		  Width: <input type="text" name="width"><br>
-		  Height: <input type="text" name="height"><br>
+		  Width: 
+		  <input type="text" name="width" value = "${width}">
+		  <br>
+		  Height: <input type="text" name="height" value = "${height}">
+		  <br>
 		  <input type="submit" value="Submit">
 		</form>
 		<c:if test="${circuit != 0 }">
